@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "amd",
+        "sourceMap": true
+    },
+    "rootDir":[
+        "scripts"
+    ],
+    "exclude": [
+    "node_modules",
+    "public",
+    "typings/browser",
+    "typings/browser.d.ts",
+    ".tmp/spec",
+    ".tmp/scripts"
+  ]
+}
