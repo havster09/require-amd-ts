@@ -4,12 +4,10 @@ define(["require", "exports"], function (require, exports) {
     var MainCtrl = (function () {
         function MainCtrl($scope) {
             this.$scope = $scope;
-            $scope.awesomeThings = [
-                '6 figure nigaa',
-                'AngularJS',
-                'Karma'
+            this.stuff = [
+                { text: 'here is some stuff' },
+                { text: 'here is some more stuff' },
             ];
-            console.log($scope.awesomeThings);
         }
         return MainCtrl;
     }());

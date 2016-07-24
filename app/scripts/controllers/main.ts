@@ -7,15 +7,12 @@ import application = require('application');
   }
 
   export class MainCtrl {
-
+    stuff:any[];
     constructor (private $scope: IMainScope) {
-      $scope.awesomeThings = [
-        '6 figure nigaa',
-        'AngularJS',
-        'Karma'
-      ];
-
-      console.log($scope.awesomeThings);
+      this.stuff = [
+        {text:'here is some stuff'},
+        {text:'here is some more stuff'},
+      ]
     }
   }
 

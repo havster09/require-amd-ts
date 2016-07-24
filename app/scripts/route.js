@@ -2,7 +2,11 @@ define(["require", "exports", 'application', 'controllers/main'], function (requ
     "use strict";
     application.config(function ($routeProvider) {
         $routeProvider.
-            when('/', { controller: main.MainCtrl, templateUrl: '../views/main.html' }).
+            when('/', {
+            controller: main.MainCtrl,
+            controllerAs: 'ctrl',
+            templateUrl: '../views/main.html'
+        }).
             otherwise({ redirectTo: '/' });
     });
 });
