@@ -3,21 +3,24 @@ require.config({
     paths: {
         'jquery': '../../bower_components/jquery/dist/jquery',
         'angular': '../../bower_components/angular/angular',
-        'angular-route': '../../bower_components/angular-route/angular-route'
+        'angular-route': '../../bower_components/angular-route/angular-route',
+        'angular-mocks': '../../bower_components/angular-mocks/angular-mocks'
     },
     shim: {
         'jquery': { exports: 'jquery' },
         'angular': { 'exports': 'angular', deps: ['jquery'] },
         'angular-route': { exports: 'angular-route', deps: ['angular'] },
-        'angularMocks': { deps: ['angular'], 'exports': 'angular.mock' }
+        'angular-mocks': { deps: ['angular'], 'exports': 'angular-mocks' }
     }
 });
 require([
     'angular',
     'angular-route',
+    'angular-mocks',
     'application',
-    'route'
-], function (angular, angularRoute, application, routes) {
+    'route',
+    'mock'
+], function (angular, angularRoute, angularMocks, application, routes, mock) {
     'use strict';
     $(document).ready(function () {
         var $html = $('html');

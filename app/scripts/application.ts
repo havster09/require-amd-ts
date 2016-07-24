@@ -11,5 +11,6 @@
 import angular = require('angular');
 import angularRoute = require('angular-route');
 
-var application = angular.module('application', ['ngRoute']);
+
+var application = angular.module('application', ['ngRoute', 'ngMockE2E']);
 export = application
