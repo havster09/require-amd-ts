@@ -10,6 +10,7 @@
 
 import angular = require('angular');
 import angularRoute = require('angular-route');
+import angularMocks = require('angular-mocks/ngMock');
 
 
 var application = angular.module('application', ['ngRoute', 'ngMockE2E']);
