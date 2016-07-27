@@ -19,8 +19,9 @@ require([
     "angular-mocks",
     "application",
     "route",
-    "mock"
-], function (angular, angularRoute, angularMocks, application, routes, mock) {
+    "mock",
+    "./services/bucks"
+], function (angular, application, routes, mock, bucks) {
     "use strict";
     $(document).ready(function () {
         var $html = $("html");

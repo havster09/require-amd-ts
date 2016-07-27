@@ -1,6 +1,6 @@
-define(["require", "exports", 'application', 'controllers/main'], function (require, exports, application, main) {
+define(["require", "exports", 'application', './controllers/main'], function (require, exports, application_1, main) {
     "use strict";
-    application.config(function ($routeProvider) {
+    application_1.application.config(function ($routeProvider) {
         $routeProvider.
             when('/', {
             controller: main.MainCtrl,

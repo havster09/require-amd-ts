@@ -1,6 +1,6 @@
-define(["require", "exports", 'angular'], function (require, exports, angular) {
+define(["require", "exports", 'angular', 'angular-route', 'angular-mocks'], function (require, exports) {
     'use strict';
     var application = angular.module('application', ['ngRoute', 'ngMockE2E']);
-    return application;
+    exports.application = application;
 });
 //# sourceMappingURL=application.js.map

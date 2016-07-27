@@ -37,14 +37,14 @@ module.exports = function (grunt) {
         files: ['bower.json'],
         tasks: ['wiredep']
       },
-      typescript: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.ts'],
-        tasks: ['typescript:base']
-      },
-      typescriptTest: {
-        files: ['test/spec/{,*/}*.ts'],
-        tasks: ['typescript:test', 'karma']
-      },
+      // typescript: {
+      //   files: ['<%= yeoman.app %>/scripts/{,*/}*.ts'],
+      //   tasks: ['typescript:base']
+      // },
+      // typescriptTest: {
+      //   files: ['test/spec/{,*/}*.ts'],
+      //   tasks: ['typescript:test', 'karma']
+      // },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
         tasks: ['compass:server', 'postcss:server']
